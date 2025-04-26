@@ -16,6 +16,6 @@ spec :
         spec:
           containers:
           - name: backend-container
-            image: prathamesh633/project-backend:latest
+            image: prathameshbhujade/project-backend:latest
             ports:
             - containerPort: 8080

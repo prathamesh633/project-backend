@@ -14,9 +14,9 @@ pipeline {
         stage ("Deploy K8s") { 
             steps {
                 sh ''' 
-                docker build -t prathamesh633/project-backend:latest .
-                docker push prathamesh633/project-backend:latest
-                docker rmi prathamesh633/project-backend:latest
+                docker build -t prathameshbhujade/project-backend:latest .
+                docker push prathameshbhujade/project-backend:latest
+                docker rmi prathameshbhujade/project-backend:latest
                 kubectl apply -f ./k8s/
                 '''
             }
